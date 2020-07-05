@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="content">123456789</p>
+<p id="log"></p>
+
+<ul id="ulTest">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+</body>
+<script>
+    // 简单练习renge 但是没有理解这个renge 想要做的事情, 看了里面的文档感觉renge是在操作DOM的内容吗?
+    var renge1 = document.createRange();
+    var content = document.getElementById('content');
+    renge1.setStart(content.childNodes[0], 2);
+    renge1.setEnd(content.childNodes[0], 6);
+    document.getElementById('log').textContent = renge1;
+</script>
+</html>

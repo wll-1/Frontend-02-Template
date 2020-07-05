@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+--------
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li><img src="../目录.png" alt=""></li>
+</ul>
+</body>
+<script>
+
+    console.log(document.body.childElementCount);
+    // 在操作DOM的时候发现body这个有些特殊, script标签没有在body内部也算是他的childNode
+    console.log(document.body.childNodes);
+    console.log(document.body.childNodes[0]);
+    console.log(document.getElementsByTagName('body').item(0).childNodes)
+    console.log(document.getElementsByTagName('body').item(0).firstChild)
+    console.log(document.getElementsByTagName('ul').item(0).childNodes)
+    console.log(document.getElementsByTagName('ul').item(0).firstChild)
+</script>
+</html>
