@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function a(a) {
+        console.log(this, a);
+    }
+    a.call(this,"wwww");
+    a("ssss");
+
+    a.call = function (a){
+        console.log("-------A-------");
+        console.log(a);
+    }
+
+    a("dddd");
+    a.call("ffff");
+
+    Function.call(this);
+    Function.bind();
+    Function.apply();
+    //Window;
+    //Document;
+    //Element;
+    //RangeError
+    Symbol.for();
+    Symbol.length;
+    //Error
+    Map.length
+    //Set
+    console.log(RegExp.$1);
+    console.log(Number.EPSILON);
+    console.log(Array.length); // 返回了一个1
+    console.log(Date.name)
+
+
+</script>
+</html>

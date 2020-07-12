@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ObjectTest</title>
+</head>
+<body>
+
+</body>
+<script>
+
+class Animal{
+    healthStatus = "healthy";
+}
+
+class Dog extends Animal{
+    bite(animal){
+        animal.healthStatus = "Injured";
+    }
+}
+
+class Humanity extends Animal{
+
+
+}
+
+function test(dog, human) {
+    dog.bite(human);
+    console.log(human.healthStatus)
+}
+
+var dog = new Dog();
+var humen = new Humanity();
+
+test(dog, humen);
+
+</script>
+</html>
